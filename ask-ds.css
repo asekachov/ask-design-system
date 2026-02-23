@@ -14,6 +14,7 @@
 @import url('components/empty-state.css');
 @import url('components/error.css');
 @import url('components/chat.css');
+@import url('components/modal.css');
 
 /* Layouts */
 @import url('layouts/sidebar.css');
