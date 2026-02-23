@@ -1,0 +1,90 @@
+/* API Table */
+.api-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.api-table td {
+    padding: 6px 8px;
+    border-bottom: 1px solid var(--border);
+    vertical-align: top;
+}
+
+.api-table td:first-child {
+    font-weight: 700;
+    width: 50px;
+}
+
+.api-table td:nth-child(2) {
+    color: var(--text-secondary);
+    width: 280px;
+}
+
+.api-table td:last-child {
+    color: var(--text-tertiary);
+}
+
+/* API Keys Table */
+.api-keys-table-wrap {
+    margin-top: 8px;
+}
+
+.api-keys-empty {
+    color: var(--text-tertiary);
+    padding: 12px 0;
+}
+
+.api-keys-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.api-keys-table th {
+    text-align: left;
+    padding: 6px 8px;
+    border-bottom: 1px solid var(--text);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: var(--text-secondary);
+}
+
+.api-keys-table td {
+    padding: 8px 8px;
+    border-bottom: 1px solid var(--border);
+    vertical-align: middle;
+}
+
+.key-value-cell {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.key-value-cell code {
+    color: var(--text-secondary);
+}
+
+.key-scope-cell {
+    color: var(--text-secondary);
+    max-width: 200px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.key-usage-cell {
+    text-align: right;
+}
+
+.key-date-cell {
+    color: var(--text-tertiary);
+}
+
+.key-actions-cell {
+    white-space: nowrap;
+}
+
+.api-keys-actions {
+    margin-top: 10px;
+}

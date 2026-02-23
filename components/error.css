@@ -1,0 +1,11 @@
+/* Error */
+.error-banner {
+    color: var(--red);
+    padding: 8px;
+    border: 1px solid var(--red);
+    margin-bottom: 8px;
+}
+
+.ha-error {
+    color: var(--red);
+}

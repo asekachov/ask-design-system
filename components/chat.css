@@ -1,0 +1,115 @@
+/* Chat */
+.chat-container {
+    display: flex;
+    flex-direction: column;
+    height: calc(100vh - 120px);
+}
+
+.chat-messages {
+    flex: 1;
+    overflow-y: auto;
+    padding-bottom: 12px;
+}
+
+.chat-welcome {
+    text-align: center;
+    padding: 60px 20px;
+    color: var(--text-secondary);
+}
+
+.chat-welcome p {
+    margin-bottom: 16px;
+}
+
+.chat-suggestions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    justify-content: center;
+}
+
+.suggestion {
+    padding: 6px 12px;
+    background: var(--bg);
+    border: 1px solid var(--border);
+    color: var(--text-secondary);
+    font-family: var(--font);
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.suggestion:hover {
+    background: var(--hover);
+    color: var(--text);
+}
+
+.chat-msg {
+    margin-bottom: 12px;
+    max-width: 720px;
+}
+
+.chat-msg.user {
+    margin-left: auto;
+}
+
+.chat-msg-role {
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: var(--text-tertiary);
+    margin-bottom: 2px;
+}
+
+.chat-msg-body {
+    padding: 10px 12px;
+    line-height: 1.6;
+    white-space: pre-wrap;
+    word-break: break-word;
+}
+
+.chat-msg.user .chat-msg-body {
+    background: var(--text);
+    color: var(--bg);
+}
+
+.chat-msg.assistant .chat-msg-body {
+    border: 1px solid var(--border);
+}
+
+.chat-msg.tool .chat-msg-body {
+    background: var(--hover);
+    border: 1px solid var(--border);
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+.chat-msg.status .chat-msg-body {
+    background: transparent;
+    color: var(--text-tertiary);
+    font-style: italic;
+    padding: 2px 0;
+}
+
+.chat-input-area {
+    display: flex;
+    gap: 8px;
+    align-items: flex-end;
+    padding-top: 8px;
+    border-top: 1px solid var(--border);
+}
+
+#chat-input {
+    flex: 1;
+    padding: 10px 12px;
+    background: var(--bg);
+    border: 1px solid var(--border);
+    color: var(--text);
+    font-family: var(--font);
+    font-size: 13px;
+    resize: none;
+    outline: none;
+    min-height: 40px;
+    max-height: 120px;
+}
+
+#chat-input:focus { border-color: var(--text); }

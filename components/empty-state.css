@@ -1,0 +1,22 @@
+/* Empty State */
+.empty-state {
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.empty-state h3 {
+    font-weight: 700;
+    margin-bottom: 6px;
+}
+
+.empty-state p {
+    color: var(--text-secondary);
+}
+
+.empty-state a { color: var(--text); font-weight: 700; }
+
+.loading {
+    color: var(--text-tertiary);
+    padding: 40px;
+    text-align: center;
+}

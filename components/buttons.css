@@ -1,0 +1,86 @@
+/* Buttons */
+.btn-primary {
+    padding: 8px 16px;
+    background: var(--text);
+    color: var(--bg);
+    border: 1px solid var(--text);
+    font-family: var(--font);
+    font-size: 13px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.btn-primary:hover { opacity: 0.8; }
+
+.btn-secondary {
+    padding: 6px 14px;
+    background: var(--bg);
+    color: var(--text);
+    border: 1px solid var(--border);
+    font-family: var(--font);
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.btn-secondary:hover { background: var(--hover); }
+
+.btn-ghost {
+    padding: 6px 14px;
+    background: transparent;
+    color: var(--text-secondary);
+    border: none;
+    font-family: var(--font);
+    font-size: 13px;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.btn-ghost:hover { color: var(--text); }
+
+.btn-icon {
+    background: none;
+    border: none;
+    color: var(--text-secondary);
+    font-family: var(--font);
+    font-size: 13px;
+    cursor: pointer;
+    padding: 2px;
+}
+
+.btn-icon:hover { color: var(--text); }
+
+.btn-small {
+    padding: 4px 10px;
+    font-size: 13px;
+    margin-left: auto;
+}
+
+.btn-google {
+    width: 100%;
+    padding: 8px 16px;
+    background: var(--bg);
+    color: var(--text);
+    border: 1px solid var(--border);
+    font-family: var(--font);
+    font-size: 13px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.btn-google:hover { background: var(--hover); }
+
+.btn-send {
+    width: 40px;
+    height: 40px;
+    background: var(--text);
+    color: var(--bg);
+    border: none;
+    font-family: var(--font);
+    font-size: 13px;
+    font-weight: 700;
+    cursor: pointer;
+    flex-shrink: 0;
+}
+
+.btn-send:hover { opacity: 0.8; }
+.btn-send:disabled { opacity: 0.3; cursor: not-allowed; }

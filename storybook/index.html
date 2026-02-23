@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ask Design System — Storybook</title>
+    <link rel="stylesheet" href="../ask-ds.css">
+    <link rel="stylesheet" href="storybook.css">
+</head>
+<body>
+    <h1 class="sb-title">Ask Design System</h1>
+
+    <!-- Tokens -->
+    <div class="sb-section">
+        <h2>Design Tokens</h2>
+        <div class="sb-grid">
+            <div class="sb-swatch">
+                <div class="sb-swatch-color" style="background: var(--bg)"></div>
+                <span>--bg</span>
+            </div>
+            <div class="sb-swatch">
+                <div class="sb-swatch-color" style="background: var(--border)"></div>
+                <span>--border</span>
+            </div>
+            <div class="sb-swatch">
+                <div class="sb-swatch-color" style="background: var(--text)"></div>
+                <span>--text</span>
+            </div>
+            <div class="sb-swatch">
+                <div class="sb-swatch-color" style="background: var(--text-secondary)"></div>
+                <span>--text-secondary</span>
+            </div>
+            <div class="sb-swatch">
+                <div class="sb-swatch-color" style="background: var(--text-tertiary)"></div>
+                <span>--text-tertiary</span>
+            </div>
+            <div class="sb-swatch">
+                <div class="sb-swatch-color" style="background: var(--hover)"></div>
+                <span>--hover</span>
+            </div>
+            <div class="sb-swatch">
+                <div class="sb-swatch-color" style="background: var(--red)"></div>
+                <span>--red</span>
+            </div>
+        </div>
+        <div class="sb-label">Font: var(--font)</div>
+        <div style="margin-bottom: 4px;">SF Mono, JetBrains Mono, Fira Code, Consolas, monospace</div>
+    </div>
+
+    <!-- Buttons -->
+    <div class="sb-section">
+        <h2>Buttons</h2>
+        <div class="sb-preview">
+            <div class="sb-row">
+                <button class="btn-primary">Primary</button>
+                <button class="btn-secondary">Secondary</button>
+                <button class="btn-ghost">Ghost</button>
+                <button class="btn-icon">[ icon ]</button>
+                <button class="btn-secondary btn-small">Small</button>
+            </div>
+            <div class="sb-row">
+                <button class="btn-google">Sign in with Google</button>
+            </div>
+            <div class="sb-row">
+                <button class="btn-send">-></button>
+                <button class="btn-send" disabled>-></button>
+            </div>
+        </div>
+        <pre class="sb-code">&lt;button class="btn-primary"&gt;Primary&lt;/button&gt;
+&lt;button class="btn-secondary"&gt;Secondary&lt;/button&gt;
+&lt;button class="btn-ghost"&gt;Ghost&lt;/button&gt;
+&lt;button class="btn-icon"&gt;[ icon ]&lt;/button&gt;
+&lt;button class="btn-secondary btn-small"&gt;Small&lt;/button&gt;</pre>
+    </div>
+
+    <!-- Toggle -->
+    <div class="sb-section">
+        <h2>Toggle</h2>
+        <div class="sb-preview">
+            <div class="sb-row">
+                <label class="toggle">
+                    <input type="checkbox">
+                    <span class="toggle-slider"></span>
+                </label>
+                <span>Off</span>
+            </div>
+            <div class="sb-row">
+                <label class="toggle">
+                    <input type="checkbox" checked>
+                    <span class="toggle-slider"></span>
+                </label>
+                <span>On</span>
+            </div>
+        </div>
+        <pre class="sb-code">&lt;label class="toggle"&gt;
+  &lt;input type="checkbox"&gt;
+  &lt;span class="toggle-slider"&gt;&lt;/span&gt;
+&lt;/label&gt;</pre>
+    </div>
+
+    <!-- Cards -->
+    <div class="sb-section">
+        <h2>Cards</h2>
+
+        <div class="sb-label">Stat Card</div>
+        <div class="sb-preview">
+            <div style="display:grid; grid-template-columns: repeat(3, 1fr); gap: 12px;">
+                <div class="stat-card">
+                    <div class="stat-label">API Key</div>
+                    <div class="stat-value">askc_abc123</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-label">Plan</div>
+                    <div class="stat-value">Free (42/100)</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-label">Services</div>
+                    <div class="stat-value">5 / 11</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="sb-label">Service Card</div>
+        <div class="sb-preview">
+            <div style="max-width: 320px;">
+                <div class="service-card">
+                    <div class="service-card-header">
+                        <div>
+                            <div class="service-name">Spotify</div>
+                            <div class="service-category">Music</div>
+                        </div>
+                        <label class="toggle">
+                            <input type="checkbox" checked>
+                            <span class="toggle-slider"></span>
+                        </label>
+                    </div>
+                    <div class="service-desc">Search tracks, albums, and artists on Spotify.</div>
+                    <div class="oauth-status connected">Account connected <button class="btn-ghost btn-small">Disconnect</button></div>
+                    <div class="service-actions">
+                        <span class="action-tag">search</span>
+                        <span class="action-tag">get_track</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="sb-label">Plan Card</div>
+        <div class="sb-preview">
+            <div class="plans-grid">
+                <div class="plan-card">
+                    <div class="plan-name">Free</div>
+                    <div class="plan-price">$0<span class="plan-period">/month</span></div>
+                    <div class="plan-detail">100 requests/month</div>
+                </div>
+                <div class="plan-card current">
+                    <div class="plan-name">Pro</div>
+                    <div class="plan-price">$9<span class="plan-period">/month</span></div>
+                    <div class="plan-detail">5,000 requests/month</div>
+                </div>
+                <div class="plan-card">
+                    <div class="plan-name">Pro Max</div>
+                    <div class="plan-price">$29<span class="plan-period">/month</span></div>
+                    <div class="plan-detail">Unlimited requests</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Forms -->
+    <div class="sb-section">
+        <h2>Forms</h2>
+        <div class="sb-preview">
+            <div class="settings-section" style="margin-bottom:0">
+                <h3>Section Title</h3>
+                <p class="setting-desc">Description of this settings section.</p>
+                <div class="setting-row">
+                    <input type="text" class="setting-input" placeholder="Enter value...">
+                    <button class="btn-secondary">Save</button>
+                    <button class="btn-ghost">Remove</button>
+                </div>
+                <div class="setting-status">Status message here</div>
+            </div>
+        </div>
+        <pre class="sb-code">&lt;div class="settings-section"&gt;
+  &lt;h3&gt;Title&lt;/h3&gt;
+  &lt;p class="setting-desc"&gt;...&lt;/p&gt;
+  &lt;div class="setting-row"&gt;
+    &lt;input class="setting-input" placeholder="..."&gt;
+    &lt;button class="btn-secondary"&gt;Save&lt;/button&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</pre>
+
+        <div class="sb-label">Info Rows</div>
+        <div class="sb-preview">
+            <div class="setting-row-info">
+                <span class="setting-label">Email</span>
+                <span>user@example.com</span>
+            </div>
+            <div class="setting-row-info">
+                <span class="setting-label">Plan</span>
+                <span>Pro</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Table -->
+    <div class="sb-section">
+        <h2>Tables</h2>
+        <div class="sb-label">API Table</div>
+        <div class="sb-preview">
+            <table class="api-table">
+                <tr><td>GET</td><td>/api/v1/auth/me</td><td>Current user info</td></tr>
+                <tr><td>POST</td><td>/api/v1/chat</td><td>Chat with tools</td></tr>
+                <tr><td>DELETE</td><td>/api/v1/auth/api-keys/{id}</td><td>Delete key</td></tr>
+            </table>
+        </div>
+
+        <div class="sb-label">API Keys Table</div>
+        <div class="sb-preview">
+            <table class="api-keys-table">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Key</th>
+                        <th>Scopes</th>
+                        <th>Requests</th>
+                        <th>Created</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Claude Desktop</td>
+                        <td class="key-value-cell"><code>askc_abc1...xyz9</code> <button class="btn-icon">[ copy ]</button></td>
+                        <td class="key-scope-cell">3 tools</td>
+                        <td class="key-usage-cell">142</td>
+                        <td class="key-date-cell">1/15/2025</td>
+                        <td class="key-actions-cell"><button class="btn-ghost btn-small">Edit</button> <button class="btn-ghost btn-small">Delete</button></td>
+                    </tr>
+                    <tr>
+                        <td>Cursor</td>
+                        <td class="key-value-cell"><code>askc_def4...uvw7</code> <button class="btn-icon">[ copy ]</button></td>
+                        <td class="key-scope-cell">All tools</td>
+                        <td class="key-usage-cell">8</td>
+                        <td class="key-date-cell">2/1/2025</td>
+                        <td class="key-actions-cell"><button class="btn-ghost btn-small">Edit</button> <button class="btn-ghost btn-small">Delete</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- Badges -->
+    <div class="sb-section">
+        <h2>Badges</h2>
+        <div class="sb-preview">
+            <div class="sb-row">
+                <span class="sb-inline"><span class="plan-badge">FREE</span></span>
+                <span class="sb-inline"><span class="plan-badge">PRO</span></span>
+                <span class="sb-inline"><span class="header-badge">5 tools available</span></span>
+            </div>
+            <div class="sb-row">
+                <span class="action-tag">search</span>
+                <span class="action-tag">get_track</span>
+                <span class="action-tag">list_playlists</span>
+            </div>
+            <div class="sb-row">
+                <span class="tool-badge">TOOL</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Code Block -->
+    <div class="sb-section">
+        <h2>Code Block</h2>
+        <div class="sb-preview">
+            <div class="code-block">
+                <code>askc_xR7q2mK9pLnWzY4...</code>
+                <button class="btn-icon" onclick="copyText('askc_example')">[ copy ]</button>
+            </div>
+        </div>
+        <div class="sb-preview">
+            <pre class="code-block"><code>{
+  "mcpServers": {
+    "ask-connect": {
+      "url": "https://example.com/mcp/sse"
+    }
+  }
+}</code></pre>
+        </div>
+    </div>
+
+    <!-- Usage Bar -->
+    <div class="sb-section">
+        <h2>Usage Bar</h2>
+        <div class="sb-label">Full Size</div>
+        <div class="sb-preview">
+            <div class="usage-bar"><div class="usage-bar-fill" style="width: 42%"></div></div>
+            <div class="usage-stats"><span>42 / 100 requests</span><span class="text-secondary">Feb 2025</span></div>
+        </div>
+        <div class="sb-preview">
+            <div class="usage-bar"><div class="usage-bar-fill warning" style="width: 78%"></div></div>
+            <div class="usage-stats"><span>78 / 100 requests</span><span class="text-secondary">Warning</span></div>
+        </div>
+        <div class="sb-preview">
+            <div class="usage-bar"><div class="usage-bar-fill critical" style="width: 95%"></div></div>
+            <div class="usage-stats"><span>95 / 100 requests</span><span class="text-secondary">Critical</span></div>
+        </div>
+
+        <div class="sb-label">Mini (sidebar)</div>
+        <div class="sb-preview" style="max-width: 200px;">
+            <div class="sidebar-usage">
+                <div class="usage-bar-mini"><div class="usage-bar-mini-fill" style="width: 42%"></div></div>
+                <span class="usage-text-mini">42 / 100</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Empty State -->
+    <div class="sb-section">
+        <h2>Empty State</h2>
+        <div class="sb-preview">
+            <div class="empty-state" style="padding: 40px 20px;">
+                <h3>No Data Yet</h3>
+                <p>Get started by <a href="#">adding something</a>.</p>
+            </div>
+        </div>
+        <div class="sb-preview">
+            <div class="loading">Loading...</div>
+        </div>
+    </div>
+
+    <!-- Error -->
+    <div class="sb-section">
+        <h2>Error</h2>
+        <div class="sb-preview">
+            <div class="error-banner">Invalid email or password</div>
+            <span class="ha-error">Connection failed</span>
+        </div>
+    </div>
+
+    <!-- Auth Layout -->
+    <div class="sb-section">
+        <h2>Auth Card</h2>
+        <div class="sb-preview" style="background: var(--hover); padding: 32px; display: flex; justify-content: center;">
+            <div class="auth-card">
+                <div class="auth-logo">
+                    <h1>Ask Product</h1>
+                    <p class="auth-subtitle">Product description</p>
+                </div>
+                <button class="btn-google">Sign in with Google</button>
+                <div class="auth-divider"><span>or</span></div>
+                <form onsubmit="return false">
+                    <input type="email" placeholder="Email">
+                    <input type="password" placeholder="Password">
+                    <button type="submit" class="btn-primary">Sign In</button>
+                </form>
+                <p class="auth-toggle">
+                    <span>Don't have an account?</span>
+                    <a href="#">Sign up</a>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sidebar Layout -->
+    <div class="sb-section">
+        <h2>Sidebar Layout</h2>
+        <div class="sb-preview" style="padding: 0; height: 300px; overflow: hidden;">
+            <div style="display: flex; height: 100%;">
+                <nav class="sidebar" style="height: 100%;">
+                    <div class="sidebar-header">
+                        <span class="logo-text">Ask Product</span>
+                    </div>
+                    <div class="nav-items">
+                        <a class="nav-item active">Dashboard</a>
+                        <a class="nav-item">Services</a>
+                        <a class="nav-item">Settings</a>
+                    </div>
+                    <div class="sidebar-footer">
+                        <div class="user-info">
+                            <span style="color: var(--text-secondary);">user@email.com</span>
+                            <span class="plan-badge">PRO</span>
+                        </div>
+                        <div class="sidebar-usage">
+                            <div class="usage-bar-mini"><div class="usage-bar-mini-fill" style="width: 35%"></div></div>
+                            <span class="usage-text-mini">35 / 100</span>
+                        </div>
+                        <a href="#" class="logout-link">Sign out</a>
+                    </div>
+                </nav>
+                <main class="content">
+                    <div class="page-header">
+                        <h2>Dashboard</h2>
+                        <p class="page-desc">Welcome to your dashboard.</p>
+                    </div>
+                    <div class="dashboard-grid">
+                        <div class="stat-card">
+                            <div class="stat-label">Metric</div>
+                            <div class="stat-value">42</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-label">Status</div>
+                            <div class="stat-value">Active</div>
+                        </div>
+                    </div>
+                </main>
+            </div>
+        </div>
+    </div>
+
+    <!-- Chat -->
+    <div class="sb-section">
+        <h2>Chat</h2>
+        <div class="sb-preview" style="padding: 0; height: 320px; overflow: hidden; display: flex; flex-direction: column;">
+            <div style="flex: 1; overflow-y: auto; padding: 16px;">
+                <div class="chat-msg user">
+                    <div class="chat-msg-role">You</div>
+                    <div class="chat-msg-body">Search for Inception on TMDB</div>
+                </div>
+                <div class="chat-msg tool">
+                    <div class="tool-badge">TOOL</div>
+                    <div class="chat-msg-body">-&gt; tmdb_search({"query": "Inception"})</div>
+                </div>
+                <div class="chat-msg assistant">
+                    <div class="chat-msg-role">Assistant</div>
+                    <div class="chat-msg-body">I found <strong>Inception</strong> (2010) — a sci-fi thriller directed by Christopher Nolan.</div>
+                </div>
+                <div class="chat-msg status">
+                    <div class="chat-msg-body">Thinking...</div>
+                </div>
+            </div>
+            <div class="chat-input-area" style="padding: 8px 16px 16px;">
+                <textarea id="chat-input" placeholder="Type a message..." rows="1" style="flex:1"></textarea>
+                <button class="btn-send">-></button>
+            </div>
+        </div>
+        <pre class="sb-code">&lt;div class="chat-msg user"&gt;
+  &lt;div class="chat-msg-role"&gt;You&lt;/div&gt;
+  &lt;div class="chat-msg-body"&gt;...&lt;/div&gt;
+&lt;/div&gt;</pre>
+    </div>
+
+    <!-- Scope Picker -->
+    <div class="sb-section">
+        <h2>Scope Picker / Create Key Form</h2>
+        <div class="sb-preview">
+            <div class="create-key-form" style="margin-top: 0;">
+                <div class="create-key-row">
+                    <input type="text" class="setting-input" placeholder="Key name" value="Claude Desktop">
+                </div>
+                <div class="create-key-row">
+                    <label class="create-key-label">
+                        <input type="checkbox"> All tools
+                    </label>
+                </div>
+                <div class="scope-checkboxes">
+                    <div class="scope-group">
+                        <label class="scope-group-label">
+                            <input type="checkbox" checked> Spotify
+                        </label>
+                        <div class="scope-group-tools">
+                            <label class="scope-tool-item">
+                                <input type="checkbox" checked>
+                                <span class="scope-tool-info">
+                                    <span class="scope-tool-name">search</span>
+                                    <span class="scope-tool-desc">Search for tracks, albums, and artists</span>
+                                </span>
+                            </label>
+                            <label class="scope-tool-item">
+                                <input type="checkbox" checked>
+                                <span class="scope-tool-info">
+                                    <span class="scope-tool-name">get_track</span>
+                                    <span class="scope-tool-desc">Get details for a specific track</span>
+                                </span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="scope-group">
+                        <label class="scope-group-label">
+                            <input type="checkbox"> TMDB
+                        </label>
+                        <div class="scope-group-tools">
+                            <label class="scope-tool-item">
+                                <input type="checkbox">
+                                <span class="scope-tool-info">
+                                    <span class="scope-tool-name">search</span>
+                                    <span class="scope-tool-desc">Search movies, TV shows, and people</span>
+                                </span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="create-key-row">
+                    <button class="btn-primary">Create</button>
+                    <button class="btn-ghost">Cancel</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../helpers.js"></script>
+    <script src="storybook.js"></script>
+</body>
+</html>

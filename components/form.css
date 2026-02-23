@@ -1,0 +1,146 @@
+/* Form / Settings */
+.settings-section {
+    border: 1px solid var(--border);
+    padding: 20px;
+    margin-bottom: 12px;
+}
+
+.settings-section h3 {
+    font-weight: 700;
+    margin-bottom: 4px;
+}
+
+.setting-desc {
+    color: var(--text-secondary);
+    margin-bottom: 12px;
+}
+
+.setting-row {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.setting-input {
+    flex: 1;
+    padding: 8px 10px;
+    background: var(--bg);
+    border: 1px solid var(--border);
+    color: var(--text);
+    font-family: var(--font);
+    font-size: 13px;
+    outline: none;
+}
+
+.setting-input:focus { border-color: var(--text); }
+
+.setting-status {
+    margin-top: 6px;
+    color: var(--text-secondary);
+}
+
+.setting-row-info {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 0;
+    border-bottom: 1px solid var(--border);
+}
+
+.setting-row-info:last-child { border-bottom: none; }
+
+.setting-label { color: var(--text-secondary); }
+
+/* Create Key Form */
+.create-key-form {
+    margin-top: 12px;
+    padding: 16px;
+    border: 1px solid var(--border);
+}
+
+.create-key-row {
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.create-key-label {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    cursor: pointer;
+}
+
+/* Scope Picker */
+.scope-checkboxes {
+    margin-bottom: 10px;
+    padding: 8px;
+    border: 1px solid var(--border);
+}
+
+.scope-group {
+    margin-bottom: 8px;
+}
+
+.scope-group-label {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: var(--text-secondary);
+    cursor: pointer;
+    margin-bottom: 4px;
+}
+
+.scope-group-items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px 12px;
+    padding-left: 20px;
+}
+
+.scope-item {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    cursor: pointer;
+}
+
+.scope-group-tools {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    padding-left: 20px;
+}
+
+.scope-tool-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 6px;
+    cursor: pointer;
+    padding: 3px 0;
+}
+
+.scope-tool-item input {
+    margin-top: 2px;
+    flex-shrink: 0;
+}
+
+.scope-tool-info {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    min-width: 0;
+}
+
+.scope-tool-name {
+    font-weight: 700;
+}
+
+.scope-tool-desc {
+    color: var(--text-tertiary);
+    white-space: normal;
+    line-height: 1.3;
+}

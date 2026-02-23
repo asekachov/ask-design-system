@@ -1,0 +1,58 @@
+/* Sidebar Usage */
+.sidebar-usage {
+    margin: 6px 0;
+}
+
+.usage-bar-mini {
+    height: 4px;
+    border: 1px solid var(--border);
+    background: var(--hover);
+    margin-bottom: 2px;
+}
+
+.usage-bar-mini-fill {
+    height: 100%;
+    background: var(--text);
+    transition: width 0.3s;
+}
+
+.usage-bar-mini-fill.warning { background: var(--text-tertiary); }
+.usage-bar-mini-fill.critical { background: var(--red); }
+
+.usage-text-mini {
+    color: var(--text-tertiary);
+}
+
+/* Billing Usage Bar */
+.usage-display {
+    margin-top: 8px;
+}
+
+.usage-bar {
+    height: 8px;
+    border: 1px solid var(--border);
+    background: var(--hover);
+    margin-bottom: 6px;
+}
+
+.usage-bar-fill {
+    height: 100%;
+    background: var(--text);
+    transition: width 0.3s;
+}
+
+.usage-bar-fill.warning { background: var(--text-tertiary); }
+.usage-bar-fill.critical { background: var(--red); }
+
+.usage-stats {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Plans Grid */
+.plans-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+    margin-top: 12px;
+}
