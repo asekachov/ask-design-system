@@ -69,22 +69,6 @@
     color: var(--text);
 }
 
-/* HA Connect Form */
-.ha-connect-form {
-    display: flex;
-    flex-direction: column;
-    gap: 6px;
-    margin-bottom: 10px;
-    padding: 8px 10px;
-    border: 1px solid var(--border);
-}
-
-.ha-form-actions {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-}
-
 /* Plan Card */
 .plan-card {
     border: 1px solid var(--border);
